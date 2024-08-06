@@ -108,8 +108,45 @@
       
       <input type="submit" value="Send">
     </form>
-    <p id="responseMessage"></p>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Please create a ticket in our Discord server: <a href="https://discord.gg/your-discord-link" target="_blank">Join our Discord</a></p>
+      </div>
+    </div>
   </section>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+  
+    // Get the form
+    var form = document.getElementById("contactForm");
+  
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+  
+    // When the user submits the form, open the modal 
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      modal.style.display = "block"; // Show the modal
+    });
+  
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  
   
   <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
