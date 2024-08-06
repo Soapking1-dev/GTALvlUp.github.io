@@ -1,12 +1,15 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    <form action="send_email.php" method="post">
+
     // Get form data
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
     $message = htmlspecialchars($_POST['message']);
     
     // Set the recipient email address
-    $to = 'your-email@example.com';
+    $to = 'gtalvlupbusiness@gmail.com';
     
     // Set the subject
     $subject = 'Contact Form Submission from ' . $name;
