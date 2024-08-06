@@ -96,17 +96,29 @@
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <form action="https://example.com/contact" method="post">
+    <form id="contactForm">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required><br><br>
+      
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send</button>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      
+      <input type="submit" value="Send">
     </form>
-    <p>We offer voice and chat support to assist you with any questions or issues you may have. Our team is here to help!</p>
+    <p id="responseMessage"></p>
   </section>
+  
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting the traditional way
+  
+      // Update the response message to include the Discord link
+      document.getElementById('responseMessage').innerHTML = 'Please create a ticket in our Discord server: <a href="https://discord.gg/your-discord-link" target="_blank">Join our Discord</a>';
+    });
+  </script>
   
 
   <section id="testimonials">
