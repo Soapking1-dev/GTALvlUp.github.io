@@ -189,7 +189,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(45deg, cyan, green, black);
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
   }
   
@@ -217,7 +217,7 @@ body {
     display: none;
     padding: 20px;
     background: linear-gradient(45deg, cyan, green, black);
-    color: rgba(255, 0, 0, 0.774);
+    color: rgba(0, 0, 0, 0.774);
   }
   
   .main-content.visible {
@@ -237,12 +237,6 @@ body {
     margin-bottom: 10px;
   }
   
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-  }
   
   .banner {
     padding: 20px;
@@ -269,6 +263,6 @@ body {
   }
   
   th {
-    background-color: #000000;
+    background-color: #ffffff;
   }
   
