@@ -101,11 +101,9 @@ body {
   }
   
   #pricing {
-    background-color:rgba(255, 255, 255, 0.589)d image */
     background-size: cover; /* Adjust as needed */
-    color: #000000; /* White text color */
+    
     padding: 25px;
-    border-radius: 10px; /* Optional: rounded corners */
   }
   
   .pricing-package {
