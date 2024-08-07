@@ -1,17 +1,16 @@
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
   }
   
   header {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1em;
     text-align: center;
+    border-radius: 25px;
   }
   
   nav ul {
@@ -25,20 +24,21 @@ body {
   }
   
   nav ul li a {
-    color: #fff;
+    color: #ff0000;
     text-decoration: none;
   }
   
   section {
     padding: 2em;
     margin: 2em 0;
-    background-color: #fff;
+    background-color: #ffffff9c;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    color: #ff0000;
   }
   
   h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
   }
@@ -57,7 +57,7 @@ body {
   }
   
   table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
   }
   
   th, td {
@@ -66,8 +66,8 @@ body {
   }
   
   th {
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.582)fff;
+    color: #ff0808;
   }
   
   form {
@@ -90,7 +90,7 @@ body {
     margin-top: 1em;
     padding: 0.75em;
     background-color: #333;
-    color: #fff;
+    color: #ff0000;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -100,10 +100,26 @@ body {
     background-color: #555;
   }
   
+  #pricing {
+    background-color:rgba(255, 255, 255, 0.589)d image */
+    background-size: cover; /* Adjust as needed */
+    color: #000000; /* White text color */
+    padding: 25px;
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+  
+  .pricing-package {
+    background: rgba(255, 255, 255, 0.7); /* Dark background for package details */
+    padding: 15px;
+    border-radius: 10px; /* Optional: rounded corners */
+    margin-bottom: 20px; /* Space between packages */
+  }  
+
+
   footer {
     text-align: center;
     padding: 1em;
-    background-color: #333;
+    background-color: #33333300;
     color: #fff;
   }
   /* The Modal (background) */
@@ -131,30 +147,29 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 50%; /* Make the button round */
-    width: 30px; /* Set width */
-    height: 30px; /* Set height */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
     line-height: 20px; /* Center text vertically */
     text-align: center; /* Center text horizontally */
   } 
 
   footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
+    padding: 10px;
+    background-color: #33333300;
     color: white;
-    position: relative;
   }
   
   .footer-logos {
-    margin-top: 10px;
+    margin-top: 25px;
   }
   
   .footer-logo {
-    width: 40px; /* Adjust size as needed */
+    width: 70px; /* Adjust size as needed */
     height: auto;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
+    margin: 0 10px; /* Space between logos */
   }
+  
   
   .footer-logo:hover {
     transform: scale(1.1);
@@ -176,7 +191,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(45deg, cyan, green, black);
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
   }
   
@@ -184,10 +199,16 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #000000;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #proceed-button:hover {
+    background-color: #dddddd;
   }
   
   .hidden {
@@ -197,6 +218,8 @@ body {
   .main-content {
     display: none;
     padding: 20px;
+    background: linear-gradient(45deg, cyan, green, black);
+    color: rgba(255, 0, 0, 0.774);
   }
   
   .main-content.visible {
@@ -216,4 +239,38 @@ body {
     margin-bottom: 10px;
   }
   
-  /* Add styles for the footer links here if needed */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .banner {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+  }
+  
+  th {
+    background-color: #000000;
+  }
+  
