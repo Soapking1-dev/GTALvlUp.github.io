@@ -109,53 +109,38 @@
       <input type="submit" value="Send">
     </form>
     
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Please create a ticket in our Discord server: <a href="https://discord.gg/your-discord-link" target="_blank">Join our Discord</a></p>
-      </div>
+    <!-- Pop-up Message -->
+    <div id="popupMessage" class="popup">
+      <p>Please create a ticket in our Discord server: <a href="https://discord.gg/KQgHrZRvqb" target="_blank">Join our Discord</a></p>
+      <button id="closePopup">Close</button>
     </div>
   </section>
-
+  
+  
   <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+    // Get the pop-up and close button elements
+    var popup = document.getElementById("popupMessage");
+    var closeBtn = document.getElementById("closePopup");
   
-    // Get the form
-    var form = document.getElementById("contactForm");
-  
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-  
-    // When the user submits the form, open the modal 
-    form.addEventListener('submit', function(event) {
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevent the default form submission
-      modal.style.display = "block"; // Show the modal
+      popup.style.display = "block"; // Show the pop-up
     });
   
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
+    // Close the pop-up when the close button is clicked
+    closeBtn.onclick = function() {
+      popup.style.display = "none";
     }
   
-    // When the user clicks anywhere outside of the modal, close it
+    // Optionally, close the pop-up if clicking outside of it (for enhancement)
     window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      if (event.target == popup) {
+        popup.style.display = "none";
       }
     }
   </script>
   
-  
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the form from submitting the traditional way
-  
-      // Update the response message to include the Discord link
-      document.getElementById('responseMessage').innerHTML = 'Please create a ticket in our Discord server: <a href="https://discord.gg/KQgHrZRvqb" target="_blank">Join our Discord</a>';
-    });
-  </script>
   
 
   <section id="testimonials">
