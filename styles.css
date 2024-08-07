@@ -176,7 +176,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(45deg, cyan, green, black);
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
   }
   
