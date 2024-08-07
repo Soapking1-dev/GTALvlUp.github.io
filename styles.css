@@ -120,12 +120,6 @@ body {
     z-index: 1000;
     width: 300px; /* Adjust width as needed */
     border-radius: 25px;
-    background: file:///C:/Users/Owner/Pictures/Screenshots/Screenshot%202024-07-18%20125801.png;
-    background-position: left top;
-    background-repeat: repeat;
-    padding: 20px;
-    width: 200px;
-    height: 150px
   }
   
   /* The Close Button */
