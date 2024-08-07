@@ -136,3 +136,75 @@ body {
     line-height: 20px; /* Center text vertically */
     text-align: center; /* Center text horizontally */
   } 
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+  }
+  
+  .footer-logos {
+    margin-top: 10px;
+  }
+  
+  .footer-logo {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  footer p {
+    margin: 0;
+  }
+ 
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, cyan, green, black);
+    color: white;
+    text-align: center;
+  }
+  
+  #proceed-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .main-content {
+    display: none;
+    padding: 20px;
+  }
+  
+  .main-content header, .main-content section, .main-content footer {
+    margin-bottom: 20px;
+  }
+  
+  .main-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .main-content li {
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for the footer links here if needed */
