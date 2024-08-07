@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -106,25 +109,21 @@ body {
     color: #fff;
   }
   /* The Modal (background) */
- /* Styling for the pop-up message */
- .popup {
+/* Styling for the pop-up message */
+.popup {
     display: none; /* Hidden by default */
     position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 20px; /* Position from the bottom */
+    left: 20px; /* Position from the left */
     background-color: #fefefe;
     border: 1px solid #888;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-    border-radius: 25px;
     z-index: 1000;
+    width: 300px; /* Adjust width as needed */
   }
   
-  .popup p {
-    margin: 0;
-  }
-  
+  /* The Close Button */
   .popup button {
     margin-top: 10px;
     padding: 5px 10px;
@@ -132,11 +131,9 @@ body {
     color: white;
     border: none;
     cursor: pointer;
-
-  }
-  
-  .popup button:hover {
-    background-color: #0056b3;
-  }
-  
-  
+    border-radius: 50%; /* Make the button round */
+    width: 30px; /* Set width */
+    height: 30px; /* Set height */
+    line-height: 20px; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+  } 
